@@ -17,8 +17,12 @@
     pip install matplotlib
     pip install seaborn
     pip install librosa
-    pip install torch torchaudio numpy
+    pip install torch
+    pip install torchaudio
+    pip install numpy
     pip install demucs
+    pip install scikit-learn
+    pip install joblib
 
 # 파일 구조
 
