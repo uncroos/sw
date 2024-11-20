@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# train.csv 파일 읽기bv                                          mf
-file_path = '/Users/an-yohan/Documents/GitHub/SW/data/train.csv'  # 파일 경로 수정
+# train.csv 파일 읽기
+file_path = '/Users/an-yohan/Documents/GitHub/SW/data/train.csv'
 data = pd.read_csv(file_path)
 
 # 시각화 스타일 설정

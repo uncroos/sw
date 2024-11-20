@@ -1,12 +1,12 @@
 from pydub import AudioSegment
 import os
 
-# 작업할 폴더 경로 설정 (train 폴더)
-train_folder = '/Users/an-yohan/Documents/GitHub/SW/data/train'  # train 폴더 경로를 설정합니다.
-output_folder = '/Users/an-yohan/Documents/GitHub/SW/sw_contest/code/train/new_train_ogg'  # 5초로 정규화된 오디오를 저장할 폴더 경로입니다.
+# 작업할 폴더 경로 설정
+train_folder = '/Users/an-yohan/Documents/GitHub/SW/data/train'
+output_folder = '/Users/an-yohan/Documents/GitHub/SW/sw_contest/code/train/new_train_ogg'
 
-# 오디오 길이 (5초) 설정 - 5000밀리초는 5초를 나타냄
-target_duration = 5000  # 밀리초 단위로 5초 길이를 설정
+# 오디오 길이 설정
+target_duration = 5000
 
 # 출력 폴더가 없다면 생성
 if not os.path.exists(output_folder):

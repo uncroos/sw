@@ -8,7 +8,7 @@ df_time = pd.read_csv('/Users/an-yohan/Documents/GitHub/SW/sw_contest/code/train
 # 각 label의 평균 시간 계산
 mean_times = df_time.groupby('label')['time'].mean()
 
-# Figure 1: 평균 시간 막대 그래프
+# 평균 시간 막대 그래프
 plt.figure(figsize=(8, 5))
 plt.bar(mean_times.index, mean_times.values, color=['skyblue', 'salmon'], alpha=0.7)
 plt.title('Average Duration of Real and Fake Audio Files')
@@ -25,7 +25,7 @@ for i, value in enumerate(mean_times.values):
 plt.savefig('average_duration_bar.png')
 plt.show()
 
-# Figure 2: Real과 Fake 데이터의 오디오 길이 밀도 함수 비교
+# Real과 Fake 데이터의 오디오 길이 밀도 함수 비교
 plt.figure(figsize=(10, 6))
 sns.kdeplot(df_time[df_time['label'] == 'real']['time'], label='Real', color='blue', shade=True)
 sns.kdeplot(df_time[df_time['label'] == 'fake']['time'], label='Fake', color='orange', shade=True)
