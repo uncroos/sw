@@ -16,7 +16,7 @@ spectral_centroids = []
 
 # Fake 오디오 파일 처리
 for file_name in os.listdir(fake_audio_folder):
-    if file_name.endswith(".ogg"):  # 오디오 파일 확장자 체크
+    if file_name.endswith(".ogg"):  # 오디오 파일 확장자
         file_path = os.path.join(fake_audio_folder, file_name)
         
         # 오디오 로드
